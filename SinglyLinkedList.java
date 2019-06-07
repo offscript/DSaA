@@ -10,6 +10,14 @@ public class SinglyLinkedList<T> {
         head = new_head;
     }
 
+    public void nodeWalk() {
+        Node node = head;
+        while (node != null) {
+            System.out.println(node.getData());
+            node = node.getNext();
+        }
+    }
+
     public class Node<T> {
 
         public T data;
